@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "ssm:TerminateSession",
+            "Resource": "arn:aws:ssm:*:*:session/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "ssm:DescribeSessions",
+            "Resource": "*"
+        }
+    ]
+}

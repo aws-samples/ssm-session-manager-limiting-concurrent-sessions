@@ -1,0 +1,19 @@
+{
+  "name": "ac10-shell-profiles",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "compile": "npm run build && npm run stage",
+    "clean": "rm -r -f ./out",
+    "stage": "node ./out/merge.js",
+    "deploy": "node ./out/deploy.js"
+  },
+  "devDependencies": {
+    "cash-rm": "^0.2.0",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.31",
+    "aws-sdk": "^2.870.0"
+  }
+}
